@@ -44,11 +44,15 @@ See **[backend/README.md](backend/README.md)** for full API docs, tech stack, an
 
 **Prerequisites:** Java 11+, Maven 3.6+
 
+From the **backend** folder (or from root: `mvn -pl backend spring-boot:run`):
+
 ```bash
 cd backend
 mvn clean install
 mvn spring-boot:run
 ```
+
+**IntelliJ:** Open the repo root, right-click root `pom.xml` → Add as Maven Project, then run **PortfolioManagerApplication** from the run menu.
 
 - **API:** http://localhost:8080  
 - **H2 console:** http://localhost:8080/h2-console (JDBC URL: `jdbc:h2:mem:portfoliodb`, User: `sa`, Password: empty)
