@@ -32,7 +32,7 @@ public class PortfolioAnalyticsService {
     public Optional<PortfolioSummary> getSummary(Long portfolioId) {
         return portfolioRepository.findById(portfolioId)
                 .map(portfolio -> {
-                    List<Investment> investments = investmentRepository.findByPortfolioId(portfolioId);
+                    List<Investment> investments = investmentRepository.findByPortfolio_Id(portfolioId);
                     BigDecimal totalCost = BigDecimal.ZERO;
                     BigDecimal totalCurrentValue = BigDecimal.ZERO;
                     EnumMap<InvestmentType, BigDecimal> valueByType = new EnumMap<>(InvestmentType.class);

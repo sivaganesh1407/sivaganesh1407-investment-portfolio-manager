@@ -12,5 +12,5 @@ import java.util.List;
 @Repository
 public interface InvestmentRepository extends JpaRepository<Investment, Long> {
 
-    List<Investment> findByPortfolioId(Long portfolioId);
+    List<Investment> findByPortfolio_Id(Long portfolioId);
 }

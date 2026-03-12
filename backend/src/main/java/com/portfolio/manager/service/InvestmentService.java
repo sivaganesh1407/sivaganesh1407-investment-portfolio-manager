@@ -32,7 +32,7 @@ public class InvestmentService {
     }
 
     public List<Investment> findByPortfolioId(Long portfolioId) {
-        return investmentRepository.findByPortfolioId(portfolioId);
+        return investmentRepository.findByPortfolio_Id(portfolioId);
     }
 
     public Optional<Investment> findById(Long id) {
